@@ -31,6 +31,8 @@ class PDF(FPDF):
 
 # Create a PDF object and generate the PDF
 pdf = PDF(format='A4', unit='mm')
+#set auto page break
+pdf.set_auto_page_break(auto=True, margin=15) #margin is the distance from the bottom of the page
 pdf.add_page()
 pdf.output('fee_statement_new.pdf')
 
