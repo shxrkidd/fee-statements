@@ -1,2 +1,6 @@
 print('Fee Statements Generator') #This script generates fee statements in PDF format for students based on their enrollment and payment status
 
+#make sure you have the required libraries installed
+#run the following command in your terminal
+#pip install fpdf
+from fpdf import FPDF
