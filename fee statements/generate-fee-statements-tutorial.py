@@ -11,7 +11,7 @@ class PDF(FPDF):
     def header(self):
         #logo
         #select the image file you want to use as a logo and adjust the size and position
-        self.image('logo_used_as_example.png', 10, 8, 30) 
+        self.image('fee statements/logo_used_as_example.png', 10, 8, 30) 
         #just set the width, height will be adjusted automatically to maintain aspect ratio
         #hence preventing distortion or stretching of the image
         #set the font for the header
@@ -35,5 +35,3 @@ pdf = PDF(format='A4', unit='mm')
 pdf.set_auto_page_break(auto=True, margin=15) #margin is the distance from the bottom of the page
 pdf.add_page()
 pdf.output('fee_statement_new.pdf')
-
-
