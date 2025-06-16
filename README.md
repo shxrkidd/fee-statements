@@ -21,7 +21,7 @@ cd fee-statements
 Install necessary dependencies:
 
 ```sh
-pip install reportlab
+pip install fpdf
 ```
 
 ## Usage
